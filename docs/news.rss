@@ -1,473 +1,387 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
-  <channel>
-    <title>conda-forge news &amp; announcements</title>
-    <link>https://conda-forge.org/docs/user/announcements.html</link>
-    <description>News and announcements for the conda-forge ecosystem and channel.</description>
-    <lastBuildDate>Wed, 17 Nov 2021 14:54:56 GMT</lastBuildDate>
-    <generator>sphinxcontrib-newsfeed</generator>
-    <item>
-      <title>2021-11-17: cloud.drone.io no longer working</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;The &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;cloud.drone.io&lt;/span&gt;&lt;/code&gt; service we use for &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;aarch64&lt;/span&gt;&lt;/code&gt; builds is no longer accepting our API
-requests for triggering builds. We have been in contact with them, but have been unable to
-resolve the issue. Going forward, we will still be adding feedstocks to &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;cloud.drone.io&lt;/span&gt;&lt;/code&gt; but
-we have moved all &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;aarch64&lt;/span&gt;&lt;/code&gt; builds to emulated builds on &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;Azure&lt;/span&gt;&lt;/code&gt;. Cross-compilers are
-available as well for resource-intensive builds. Please rerender your feedstock as needed to
-get the updated configuration.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Wed, 17 Nov 2021 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2021-10-20: conda-forge now uses mambabuild as default</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;conda-forge now uses &lt;a class="reference external" href="https://github.com/mamba-org/mamba"&gt;mamba&lt;/a&gt; during the build
-process (via &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda&lt;/span&gt; &lt;span class="pre"&gt;mambabuild&lt;/span&gt;&lt;/code&gt; of the &lt;a class="reference external" href="https://github.com/mamba-org/boa"&gt;boa&lt;/a&gt; project). This was
-changed in &lt;a class="reference external" href="https://github.com/conda-forge/conda-smithy/blob/main/CHANGELOG.rst#v3130"&gt;conda-smithy 3.13.0&lt;/a&gt;
-and should automatically apply when re-rendering.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Wed, 20 Oct 2021 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2021-10-13: GCC 10 and clang 12 as default compilers for Linux and macOS</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;These compilers will become the default for building packages in conda-forge.
-One notable change in GCC 10 is that the -fopenmp flag in FFLAGS is dropped.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Wed, 13 Oct 2021 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2021-10-04: python 3.6 is now dropped when building conda-forge packages</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;python 3.6 is end-of-life in December 2021 and we are dropping support for it
-early to avoid having to rebuild packages as part of python 3.10 migration
-as that would save lots of CI resources.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Mon, 04 Oct 2021 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2021-09-30: defaults channel is now dropped when building conda-forge packages</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;You can get the previous behaviour by using the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;channel_sources&lt;/span&gt;&lt;/code&gt; setting in
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda-forge.yml&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Thu, 30 Sep 2021 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2020-05-22: conda-forge is now citable!</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;You can now cite &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda-forge&lt;/span&gt;&lt;/code&gt; using our &lt;a class="reference external" href="https://doi.org/10.5281/zenodo.4774216"&gt;Zenodo entry&lt;/a&gt;!
-This entry credits the entire &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda-forge&lt;/span&gt;&lt;/code&gt; community for its hard work in building our
-amazing ecosystem.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Fri, 22 May 2020 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2020-12-16: Moving to CentOS 7 and CentOS 6 End-of-Life</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda-forge&lt;/span&gt;&lt;/code&gt;’s compiler stack uses repackaged libraries from CentOS 6
-to supply certain libraries, notably &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;glibc&lt;/span&gt;&lt;/code&gt; when building recipes. We currently
-default to using CentOS 6 with the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;glibc&lt;/span&gt;&lt;/code&gt; 2.12 ABI. However, CentOS 6 reached
-end-of-life in November 2020 and increasingly software packages require at
-least CentOS 7 with the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;glibc&lt;/span&gt;&lt;/code&gt; 2.17 ABI. We also realize that due to recent
-events, some communities that may have been planning to skip CentOS 7
-and move straight to CentOS 8 might be reconsidering those plans. Further, they
-may not be ready for a full-scale switch to CentOS 7. Thus the
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda-forge&lt;/span&gt;&lt;/code&gt; core team has decided to delay moving to CentOS 7 until sometime
-early next year, likely the end of January 2021 at the earliest. We are actively
-looking for feedback from our users on this issue. Please do &lt;a class="reference internal" href="../orga/getting-in-touch.html#getintouch"&gt;&lt;span class="std std-ref"&gt;get in touch&lt;/span&gt;&lt;/a&gt;
-if you have comments or concerns!&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Wed, 16 Dec 2020 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2020-12-02: Artifact Validation</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;In an effort to better secure &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda-forge&lt;/span&gt;&lt;/code&gt;, we are developing a process to
-validate artifacts before they are uploaded to &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;anaconda.org&lt;/span&gt;&lt;/code&gt;. This validation
-will look for various security-related items, such as artifacts that overwrite
-key pieces of certain packages. While this process is in development, we will not
-be rejecting uploads. However, we will start scanning our current artifacts and
-working with the maintainers of those artifacts to mark broken any which we deem
-a security risk. We will also be running validation on new artifacts being upload
-and will report any issues back to feedstocks. At a future date, artifacts that
-do not pass validation will not be uploaded.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Wed, 02 Dec 2020 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2020-10-08: Compiler Upgrade to GCC 9.3.0</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;We will be upgrading all &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;GCC&lt;/span&gt;&lt;/code&gt;-based compilers to version
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;9.3.0&lt;/span&gt;&lt;/code&gt; on all platforms. This upgrade will not affect &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;C&lt;/span&gt;&lt;/code&gt; or
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;C++&lt;/span&gt;&lt;/code&gt; code, but will require a rebuild of all feedstocks that use
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;FORTRAN&lt;/span&gt;&lt;/code&gt; due to a change in the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;SONAME&lt;/span&gt;&lt;/code&gt;. During this rebuild,
-we will keep the old compiler versions in production, temporarily
-doubling the build matrix. Once the migration is deemed complete,
-these old compiler versions will be removed.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Thu, 08 Oct 2020 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2020-08-07: Completed New Staging Process for anaconda.org Uploads</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;We have now completed rolling out the new staging process for uploads
-to anaconda.org. Direct uploads to the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda-forge&lt;/span&gt;&lt;/code&gt; channel will no
-longer work. If you are having trouble with package uploads, please
-rerender your feedstock with the latest version of &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda-smithy&lt;/span&gt;&lt;/code&gt;.
-As always, if you need help, bump us on Gitter or GitHub!&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Fri, 07 Aug 2020 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2020-08-06: Fixed Maintenance Process for Feedstock Teams</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;We have fixed a bug where the maintainers of feedstocks listed in the
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;meta.yaml&lt;/span&gt;&lt;/code&gt; did not match those listed in the GitHub team. Due to this
-change, you may notice emails from GitHub informing you that you have been
-removed from a GitHub team if you have recently removed yourself from a
-feedstock via changing the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;meta.yaml&lt;/span&gt;&lt;/code&gt;. A similar fix has been applied
-for maintenance teams as well, though you will not see emails from this
-fix.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Thu, 06 Aug 2020 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2020-07-23: CentOS 7 sysroot Now Available for linux-64 Builds</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;We are very excited to announce that new compilers based on repackaged
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;sysroot&lt;/span&gt;&lt;/code&gt;’s from CentOS 7 are now available for all &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;linux-*&lt;/span&gt;&lt;/code&gt; platforms.
-These compilers will be the default going forward for any &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;gcc&lt;/span&gt;&lt;/code&gt;, &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;gxx&lt;/span&gt;&lt;/code&gt;,
-and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;gfortran&lt;/span&gt;&lt;/code&gt; versions past &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;8.4.0&lt;/span&gt;&lt;/code&gt; on &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;ppc64le&lt;/span&gt;&lt;/code&gt; and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;7.5.0&lt;/span&gt;&lt;/code&gt; on
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;x86_64&lt;/span&gt;&lt;/code&gt;/&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;aarch64&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;On the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;linux-64&lt;/span&gt;&lt;/code&gt; platform, we have also built the CentOS 6 &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;sysroot&lt;/span&gt;&lt;/code&gt;
-and set it as the default, consistent with our current compilers. To use the
-CentOS 7 &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;sysroot&lt;/span&gt;&lt;/code&gt; on &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;linux-64&lt;/span&gt;&lt;/code&gt;, add a requirement of &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;sysroot_linux-64&lt;/span&gt; &lt;span class="pre"&gt;2.17&lt;/span&gt;&lt;/code&gt;
-to the build section of your recipe. You also need to set the proper Docker
-image in your &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda_build_config.yaml&lt;/span&gt;&lt;/code&gt;. See &lt;a class="reference internal" href="../maintainer/knowledge_base.html#centos7"&gt;&lt;span class="std std-ref"&gt;Using CentOS 7&lt;/span&gt;&lt;/a&gt; for details.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Thu, 23 Jul 2020 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2020-07-23: Strict channel priority in builds for OSX and Linux</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;We have changed the OSX and Linux platforms to enforce strict channel priority
-in package builds. This change means that if a package is available in the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda-forge&lt;/span&gt;&lt;/code&gt;
-channels, the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda&lt;/span&gt;&lt;/code&gt; solver will not consider any versions of the package from other
-channels. Users can disable this by setting &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;channel_priority:&lt;/span&gt; &lt;span class="pre"&gt;flexible&lt;/span&gt;&lt;/code&gt; in their
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda-forge.yml&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Thu, 23 Jul 2020 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2020-07-23: NumPy 1.16 is the minimal NumPy version on all platforms.</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;In accordance with &lt;a class="reference external" href="https://numpy.org/neps/nep-0029-deprecation_policy.html"&gt;NEP-29&lt;/a&gt;,
-we have switched to have &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;numpy&lt;/span&gt; &lt;span class="pre"&gt;1.16&lt;/span&gt;&lt;/code&gt; as the minimum supported version on all
-platforms.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Thu, 23 Jul 2020 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2020-07-17: Conda-forge is building openblas with both pthreads and openmp on Linux</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;The main change is that &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;openblas&lt;/span&gt;&lt;/code&gt; will use pthreads for threading by default on Linux
-instead of the previous &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;openmp&lt;/span&gt;&lt;/code&gt; default.
-The &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;openmp&lt;/span&gt;&lt;/code&gt; builds can be recovered by installing &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;libopenblas=*=*openmp*&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Fri, 17 Jul 2020 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2020-07-16: Core Dependency Tree Package Changes</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda-forge&lt;/span&gt;&lt;/code&gt; is moving to a new system for generating Core Dependency Tree (CDT)
-packages. These changes include&lt;/p&gt;
-
-&lt;p&gt;CDT packages will no longer be built using feedstocks and this
-practice is officially deprecated.&lt;/p&gt;
-
-&lt;p&gt;Any current CDT packages in feedstocks will be moved to the new
-&lt;a class="reference external" href="https://github.com/conda-forge/cdt-builds"&gt;conda-forge/cdt-builds&lt;/a&gt;
-repo and the feedstock will be archived. Members of core will be doing this slowly
-on an as-needed basis, so it may not happen right away.&lt;/p&gt;
-
-&lt;p&gt;Requests for new CDTs should be submitted as PRs to the
-&lt;a class="reference external" href="https://github.com/conda-forge/cdt-builds"&gt;conda-forge/cdt-builds&lt;/a&gt; repo.&lt;/p&gt;
-
-&lt;p&gt;These changes are being made so that &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda-forge&lt;/span&gt;&lt;/code&gt; can provide access to
-CentOS 7 / glibc 2.17 for &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;linux-64&lt;/span&gt;&lt;/code&gt; builds. They will also move more of the
-packages needed for &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda-forge&lt;/span&gt;&lt;/code&gt; builds into the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda-forge&lt;/span&gt;&lt;/code&gt; channels making
-builds more reliable.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Thu, 16 Jul 2020 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2020-07-16: Moving from clang 9 to clang 10</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;conda-forge is moving to clang 10 on macOS!
-Check the release &lt;a class="reference external" href="https://releases.llvm.org/10.0.0/tools/clang/docs/ReleaseNotes.html#what-s-new-in-clang-10-0-0"&gt;notes&lt;/a&gt;
-for what is new, breaking, or deprecated.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Thu, 16 Jul 2020 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2020-07-15: CFEP-18: Removing static libraries from the main build</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;With &lt;a class="reference external" href="https://github.com/conda-forge/cfep/blob/main/cfep-18.md"&gt;CFEP-18&lt;/a&gt;
-we now have a policy on how to deal with static packages. The most important
-change here is that we will be removing static libraries from the main packages
-and moving them to &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;-static&lt;/span&gt;&lt;/code&gt; suffixed packages. &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;-static&lt;/span&gt;&lt;/code&gt; packages will not
-be built by default but only on request.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Wed, 15 Jul 2020 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2020-07-03: cf-mark-broken renamed to admin-requests</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;The &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;cf-mark-broken&lt;/span&gt;&lt;/code&gt; repo has been renamed to &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;admin-requests&lt;/span&gt;&lt;/code&gt;. It still
-serves the same purpose. However, we have expanded the capabilities of the repo
-to be able to mark packages as not broken.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Fri, 03 Jul 2020 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2020-05-28: New Process for Marking Packages as Broken</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;We are changing the way we mark packages as &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;broken&lt;/span&gt;&lt;/code&gt; to
-better match the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;defaults&lt;/span&gt;&lt;/code&gt; channel and to better enable
-reproducible environments that depended on broken packages.
-We will now be adding the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;broken&lt;/span&gt;&lt;/code&gt; label to packages but leaving
-them on the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;main&lt;/span&gt;&lt;/code&gt; channel. In order to make sure they do not
-appear in the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;repodata.json&lt;/span&gt;&lt;/code&gt; for the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;main&lt;/span&gt;&lt;/code&gt; channel, we will
-be patching the repo data to remove them using the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;removals&lt;/span&gt;&lt;/code&gt;
-feature.&lt;/p&gt;
-
-&lt;p&gt;Users will notice the following changes&lt;/p&gt;
-
-&lt;p&gt;The packages on &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;anaconda.org&lt;/span&gt;&lt;/code&gt; will now have both the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;main&lt;/span&gt;&lt;/code&gt;
-and the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;broken&lt;/span&gt;&lt;/code&gt; labels.&lt;/p&gt;
-
-&lt;p&gt;All requests to mark packages as broken must be sent to the
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;cf-mark-broken&lt;/span&gt;&lt;/code&gt; repo.&lt;/p&gt;
-
-&lt;p&gt;Members of &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;core&lt;/span&gt;&lt;/code&gt; can no longer mark things as broken by
-hand since the repo data patching must be done as well.&lt;/p&gt;
-
-&lt;p&gt;The package metadata for broken packages may differ slightly
-from when they were on the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;main&lt;/span&gt;&lt;/code&gt; channel.&lt;/p&gt;
-
-&lt;p&gt;The only correct source of package metadata is now the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;repodata.json&lt;/span&gt;&lt;/code&gt;
-etc on &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;anaconda.org&lt;/span&gt;&lt;/code&gt;. Any other sources may be missing critical changes.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Thu, 28 May 2020 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2020-05-09: New Staging Process for anaconda.org Uploads</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;Starting this week, we are changing the way we upload packages to &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;anaconda.org&lt;/span&gt;&lt;/code&gt;.
-We will move from direct uploads to the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda-forge&lt;/span&gt;&lt;/code&gt; &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;main&lt;/span&gt;&lt;/code&gt; channel to using a
-staging organization/channel combined with a copy request from the staging channel to
-the production channel. This new process will allow us to perform some validation on
-the outputs of feedstocks before they are released.&lt;/p&gt;
-
-&lt;p&gt;What will you see as a feedstock maintainer?&lt;/p&gt;
-
-&lt;p&gt;Starting this week, the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;admin-migrations&lt;/span&gt;&lt;/code&gt; service will be making commits to all
-feedstocks to provision them with the necessary configuration, API keys, and tokens.&lt;/p&gt;
-
-&lt;p&gt;Each feedstock will now be provisioned with a secret token. This token should not be
-shared or taken out of the CI services. It is used to identify the feedstock during
-the upload process.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;admin-migrations&lt;/span&gt;&lt;/code&gt; service will be setting a new top-level key in the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda-forge.yml&lt;/span&gt;&lt;/code&gt;,
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda_forge_output_validation:&lt;/span&gt; &lt;span class="pre"&gt;true&lt;/span&gt;&lt;/code&gt;. This key indicates to &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda-smithy&lt;/span&gt;&lt;/code&gt; that it
-should include the output validation calls in the feedstock CI scripts.&lt;/p&gt;
-
-&lt;p&gt;Currently open PRs will need to have this key added by hand and then rerendered.&lt;/p&gt;
-
-&lt;p&gt;When PRs are running the CI scripts, they will do some initial validation of the
-feedstock outputs. If this validation fails, the CI job will fail. Please see the
-CI logs for the error message which is printed after &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda-build&lt;/span&gt;&lt;/code&gt; runs.&lt;/p&gt;
-
-&lt;p&gt;Once a PR is merged to master, the copy from the staging channel to the production
-channel will happen automatically.&lt;/p&gt;
-
-&lt;p&gt;Should a copy request fail, you will get a notification via a comment on the commit
-to master.&lt;/p&gt;
-
-&lt;p&gt;As part of this process, uploads from &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;appveyor&lt;/span&gt;&lt;/code&gt; will no longer be allowed unless there is
-a significant barrier to using &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;azure&lt;/span&gt;&lt;/code&gt;. We have recently upgraded the compiler infrastructure
-on &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;azure&lt;/span&gt;&lt;/code&gt; to support this change in policy.&lt;/p&gt;
-
-&lt;p&gt;Despite our extensive testing, we do not expect this change to be completely smooth,
-so please bear with us. As always, if you have any questions, concerns, or trouble, you
-can find us on Gitter or bump us directly on Github!&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Sat, 09 May 2020 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2020-03-24: vs2015 to vs2017 Transition</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;We are formally deprecating &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;vs2015&lt;/span&gt;&lt;/code&gt; in two weeks on 2020-04-07 and will move to
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;vs2017&lt;/span&gt;&lt;/code&gt;. This change will enable us to support the usage of &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;msbuild&lt;/span&gt;&lt;/code&gt; on Azure for the
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;win&lt;/span&gt;&lt;/code&gt; platform and will provide additional support for &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;C++&lt;/span&gt;&lt;/code&gt;.
-Most packages built with &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;vs2015&lt;/span&gt;&lt;/code&gt; can be linked with &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;vs2017&lt;/span&gt;&lt;/code&gt; toolchain (but not vice-versa).
-An exception is static libraries compiled with whole program optimization (/GL flag) which may be
-incompatible with the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;vs2017&lt;/span&gt;&lt;/code&gt; toolchain. These static libraries will need to be rebuilt
-using &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;vs2017&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Tue, 24 Mar 2020 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2020-03-23: Appveyor Deprecation</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;We are now starting to formally deprecate Appveyor in favor of Azure for builds on the
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;win&lt;/span&gt;&lt;/code&gt; platform. Note that we have not been adding appveyor to new feedstocks
-for a while, so this is not a completely new change in policy. We will now, however, begin to
-actively disable Appveyor builds on feedstocks not using it by turning off builds for
-GitHub &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;push&lt;/span&gt;&lt;/code&gt; events. Additionally, we have been issuing PRs to any remaining
-feedstocks to move them to Azure. We are aware that some packages built with &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;msbuild&lt;/span&gt;&lt;/code&gt;
-cannot yet be moved to Azure and so are leaving Appveyor on for those feedstocks for
-now.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Mon, 23 Mar 2020 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2020-03-21: Python 2.7 Admin Command Available</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;A webservices admin command is now available to add Python 2.7 back to
-feedstocks. Put &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;&amp;#64;conda-forge-admin&lt;/span&gt; &lt;span class="pre"&gt;add&lt;/span&gt; &lt;span class="pre"&gt;python&lt;/span&gt; &lt;span class="pre"&gt;2.7&lt;/span&gt;&lt;/code&gt; in the title on an
-issue in your feedstock. The admin webservices bot will then issue a PR
-adding back Python 2.7. Note that this PR will remove other Python builds
-and any &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;win&lt;/span&gt;&lt;/code&gt;, &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;aarch64&lt;/span&gt;&lt;/code&gt;, or &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;ppc64le&lt;/span&gt;&lt;/code&gt; builds. If you want to keep
-those, merge the PR into a separate branch on your feedstock.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Sat, 21 Mar 2020 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2020-03-18: Python 2.7 and vs2008 Deprecation</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;Python 2.7 is no longer supported by the upstream developers as of 2020-01-01.
-Conda-forge is thus deprecating its Python 2.7 support. Conda-forge will provide
-no ongoing support for Python 2.7 builds and any existing builds are provided on an “as-is” basis.&lt;/p&gt;
-
-&lt;p&gt;A &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;cf202003&lt;/span&gt;&lt;/code&gt; label has been applied to the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;conda-forge&lt;/span&gt;&lt;/code&gt; channel for those
-who need a reference to the package index with Python 2.7.&lt;/p&gt;
-
-&lt;p&gt;We are removing support for &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;vs2008&lt;/span&gt;&lt;/code&gt; on Windows in conjunction with the deprecation
-of Python 2.7, as it was only supported to build this version of Python.&lt;/p&gt;
-
-&lt;p&gt;We will provide an admin command that will add back Python 2.7 to any feedstock.
-Note that as stated above, we cannot provide support for any Python 2.7 builds
-generated with this admin command. Further, this admin command will only work on
-&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;osx-64&lt;/span&gt;&lt;/code&gt; and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;linux-64&lt;/span&gt;&lt;/code&gt; platforms.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Wed, 18 Mar 2020 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2019-09-30: Clang 9.0.0 and gfortran 7.3.0 as default compilers in OSX.</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;If you maintain a feedstock that requires a C/C++ compiler, no changes necessary. A rerender
-should be done next time the feedstock is updated to use the new compiler.&lt;/p&gt;
-
-&lt;p&gt;If you maintain a feedstock with a Fortran compiler, a PR to upgrade to gfortran 7.3.0 was
-already issued. If that PR was merged, there’s nothing to do. If not, contact core if you
-need help migrating.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Mon, 30 Sep 2019 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2019-03-28: We overhauled the blas support in conda-forge.</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;Our packages now build against NETLIB’s reference implementation.&lt;/p&gt;
-
-&lt;p&gt;You as a user can now choose the implementation available at runtime.&lt;/p&gt;
-
-&lt;p&gt;For more information please refer to the &lt;a class="reference internal" href="../maintainer/knowledge_base.html#knowledge-blas"&gt;&lt;span class="std std-ref"&gt;documentation&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Thu, 28 Mar 2019 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2019-01-22: It has happened! Conda-forge has migrated to the latest compilers 🎉.</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;maintain a compiled feedstock, it will likely need to be rerender&lt;/p&gt;
-
-&lt;p&gt;need to roll back to the old compilers, you can use the “cf201901” label&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Tue, 22 Jan 2019 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2018-10-12: The rebuild is moving along nicely with almost a third of the packages completed.</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;Recently completed are NumPy and Openblas which should open up much of the python numeric stack.
-We’re only about 5 feedstocks away from opening up all of R as well.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Fri, 12 Oct 2018 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2018-09-24: A minimal python 3.7 build is now available across all platforms and both compilers!</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description></description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Mon, 24 Sep 2018 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2018-09-24: Deprecation notice for Python 3.5</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;As we start building out more of the Python 3.7 stack, we will no longer be building
-Python 3.5 packages.&lt;/p&gt;
-
-&lt;p&gt;No new python 3.5 packages will be built after 2018-10-01.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Mon, 24 Sep 2018 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2018-09-20: The compiler migration is in full swing.  The bot will be making the rounds and
-modernizing more than 4000 packages.  This is going to take a few months to get done so
-bear with us.</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description></description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Thu, 20 Sep 2018 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>2018-09-10: Conda forge now has a magical status bar for tracking the progress of migrations.</title>
-      <link>https://conda-forge.org/docs/user/announcements.html</link>
-      <description>&lt;p&gt;You can find this at &lt;a class="reference external" href="https://conda-forge.org/status"&gt;conda-forge.org/status&lt;/a&gt;.&lt;/p&gt;
-</description>
-      <guid>https://conda-forge.org/docs/user/announcements.html</guid>
-      <pubDate>Mon, 10 Sep 2018 00:00:00 GMT</pubDate>
-    </item>
-  </channel>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>conda-forge | community-driven packaging for conda Blog</title>
+        <link>https://conda-forge.org/news/</link>
+        <description>conda-forge | community-driven packaging for conda Blog</description>
+        <lastBuildDate>Thu, 06 Aug 2026 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Moving to GCC 15 and Clang 21 as default compiler versions]]></title>
+            <link>https://conda-forge.org/news/2026/08/06/moving-to-gcc-15-clang-21/</link>
+            <guid>https://conda-forge.org/news/2026/08/06/moving-to-gcc-15-clang-21/</guid>
+            <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[As part of our regular toolchain updates, we're planning to update the baseline]]></description>
+            <content:encoded><![CDATA[<p>As part of our regular toolchain updates, we're planning to update the baseline
+versions of GCC (our default compiler on Linux) to v15 and of Clang (default on macOS) to v21,
+in one week.</p>
+<p>For more details, see <a href="https://github.com/conda-forge/conda-forge-pinning-feedstock/pull/8795" target="_blank" rel="noopener noreferrer" class="">https://github.com/conda-forge/conda-forge-pinning-feedstock/pull/8795</a>.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Feedstock Team Update Maintenance & Downtime]]></title>
+            <link>https://conda-forge.org/news/2026/04/21/team-update-maint/</link>
+            <guid>https://conda-forge.org/news/2026/04/21/team-update-maint/</guid>
+            <pubDate>Tue, 21 Apr 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[We need to do maintenance on the feedstock GitHub teams that requires some downtime.]]></description>
+            <content:encoded><![CDATA[<p>We need to do maintenance on the feedstock GitHub teams that requires some downtime.
+During this downtime, feedstock teams will not be updated. If you need help with an
+urgent, feedstock team-related maintenance item, please contact <code>@conda-forge/core</code>.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Github-hosted Actions Runners for conda-forge]]></title>
+            <link>https://conda-forge.org/news/2026/03/08/move-to-github-actions/</link>
+            <guid>https://conda-forge.org/news/2026/03/08/move-to-github-actions/</guid>
+            <pubDate>Sun, 08 Mar 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[conda-forge is now able to enjoy extended concurrency limits for Github Actions, and thus we can finally use it as CI provider for package builds. To enable this functionality on Linux, rerender your feedstock with conda-smithy 3.57.1 or later. Windows and macOS still default to Azure for the time being (check conda-forge.github.io#2771 for updates).]]></description>
+            <content:encoded><![CDATA[<p><code>conda-forge</code> is now able to enjoy extended concurrency limits for Github Actions, and thus we can finally use it as CI provider for package builds. To enable this functionality on Linux, rerender your feedstock with <code>conda-smithy</code> 3.57.1 or later. Windows and macOS still default to Azure for the time being (check <a href="https://github.com/conda-forge/conda-forge.github.io/issues/2771" target="_blank" rel="noopener noreferrer" class="">conda-forge.github.io#2771</a> for updates).</p>
+<p><code>conda-forge</code> also uses GHA for infrastructure and automation, and there is no way to split the general pool into smaller subpools with different priorities. All the repos in the organization are part of a flat FIFO queue. In order to avoid self-DOS'ing our infra, we are implement a few rules:</p>
+<ul>
+<li class="">In order to guarantee fair use across all repositories, a given feedstock can only run up to 50 concurrent GHA jobs. Feedstocks needing more concurrent jobs can still use <code>Azure</code> by setting the appropriate value in the <a class="" href="https://conda-forge.org/docs/maintainer/conda_forge_yml/#provider"><code>provider</code> section</a> of their <code>conda-forge.yml</code>.</li>
+<li class="">We reserve the right to cancel build jobs if the org-wide limits are close to being hit. This is done to secure a buffer of runners for infrastructure and automation jobs.</li>
+</ul>
+<p>As a reminder, the only Github Actions workflows that can be used are those provided by conda-smithy rerender, without any further modifications. Any other use is forbidden and may be removed without prior warning.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Bumping Minimum MacOS version to 11.0]]></title>
+            <link>https://conda-forge.org/news/2026/02/06/macOS-11/</link>
+            <guid>https://conda-forge.org/news/2026/02/06/macOS-11/</guid>
+            <pubDate>Fri, 06 Feb 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[We will bump the minimum MacOS version from 10.13 (released in Sept. 2017, end-of-life since]]></description>
+            <content:encoded><![CDATA[<p>We will bump the minimum MacOS version from 10.13 (released in Sept. 2017, end-of-life since
+Dec. 2020) to 11.0 (released Nov. 2020, end-of-life since Sept. 2023) sometime next week.</p>
+<p>This will not affect already-published artefacts, and you will not receive incompatible builds
+even when still using an older Mac. However, going forward, to be able to keep using the most
+recent packages from conda-forge, you will need to update your OS to at least 11.0.</p>
+<p>The reason conda-forge is able to support macOS versions far beyond their end-of-life is due to the
+fact that -- unlike many other paradigms -- we are able to always ship an up-to-date C++ standard
+library (<code>libcxx</code> on OSX) in user environments, superseding the system library (at least from the
+point of view of packages in the respective conda environments) that's usually too outdated for
+contemporary packaging needs.</p>
+<p>However, several core packages in the ecosystem have begun requiring 11.0 or newer, in a way
+that we cannot be circumvent. The key driver for this is <code>libcxx</code> itself; it has a foundational
+role in our infrastructure, and many aspects depend on this library being up-to-date. Given that
+<code>libcxx</code> itself will begin requiring macOS 11.0 as of v22.1, we need to follow suit.</p>
+<p>Other fundamental packages that already require a newer deployment target is the <code>qt</code> ecosystem,
+languages like <code>go</code>, <code>nodejs</code>, <code>dotnet</code>, <code>zig</code>, and key libraries like <code>libabseil</code> and <code>libprotobuf</code>.
+Since <code>go</code> already requires a deployment target of at least 12.0, we have added a custom
+<a href="https://github.com/conda-forge/conda-forge-pinning-feedstock/blob/main/recipe/migrations/go_macos.yaml" target="_blank" rel="noopener noreferrer" class="">migrator</a>
+that will send PRs to update <code>go</code>-feedstocks without having to do manual modifications.</p>
+<p>As soon as we make the switch, all new builds (on properly rerendered feedstocks) in conda-forge
+for OSX will require at least 11.0. This constraint is implemented via the <code>{{ stdlib("c") }}</code>
+meta-package, which picks up <code>c_stdlib_version</code> from our global pinning (unless
+<a href="https://conda-forge.org/docs/maintainer/knowledge_base/#requiring-newer-macos-sdks" target="_blank" rel="noopener noreferrer" class="">overridden</a>
+on the feedstock in <code>recipe/conda_build_config.yaml</code>), and will inject (on OSX) a corresponding constraint
+on <code>__osx &gt;=11</code> in the package metadata. This instructs the resolver to ignore such artefacts on
+older systems, ensuring that no incompatible packages get installed.</p>
+<p>If you are overriding <code>c_stdlib_version</code> or <code>MACOSX_SDK_VERSION</code> to values &lt;=11.0 in your feedstock,
+please remove that configuration, as it has become redundant.</p>
+<p>For more details (or questions) about this, see <a href="https://github.com/conda-forge/conda-forge.github.io/issues/2467" target="_blank" rel="noopener noreferrer" class="">https://github.com/conda-forge/conda-forge.github.io/issues/2467</a>.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New Syntax for External MPI Packages]]></title>
+            <link>https://conda-forge.org/news/2026/01/29/new-mpi-external-syntax/</link>
+            <guid>https://conda-forge.org/news/2026/01/29/new-mpi-external-syntax/</guid>
+            <pubDate>Thu, 29 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Due to ongoing issues with the solver pulling in the external MPI builds ahead of the real packages,]]></description>
+            <content:encoded><![CDATA[<p>Due to ongoing issues with the solver pulling in the <code>external</code> MPI builds ahead of the real packages,
+we have moved the external builds to a new label, <code>conda-forge/label/mpi-external</code>. The packages on this
+label replace the old MPI packages with <code>external</code> in their build strings. These old packages have been labeled
+as broken. Follow our <a href="https://conda-forge.org/docs/user/tipsandtricks/#using-external-message-passing-interface-mpi-libraries" target="_blank" rel="noopener noreferrer" class="">documentation</a>
+to update to the new syntax.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[NVIDIA Tegra Migrator Ready for General Use]]></title>
+            <link>https://conda-forge.org/news/2026/01/07/tegra-migrator/</link>
+            <guid>https://conda-forge.org/news/2026/01/07/tegra-migrator/</guid>
+            <pubDate>Wed, 07 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Tegra devices are system on chip (SOC) devices used in robotics and other mobile]]></description>
+            <content:encoded><![CDATA[<p>Tegra devices are system on chip (SOC) devices used in robotics and other mobile
+applications. They are a Linux ARM (aarch64) platform variant which must be targeted
+separately from Server Base System Architecture (SBSA) ARM when compiling for CUDA 12.x and
+earlier. Non-NVIDIA feedstock maintainers may now build Tegra variants for their CUDA 12.9
+packages if they choose by following <a href="https://github.com/conda-forge/cuda-feedstock/blob/main/recipe/doc/recipe_guide.md#building-for-arm-tegra-devices" target="_blank" rel="noopener noreferrer" class="">these
+directions</a>.</p>
+<p>This special Tegra variant is only relevant for packages still targeting CUDA 12.9
+because starting with CUDA 13.0, supported Tegra devices are SBSA-compliant, so they
+do not need to be targeted separately.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New community meetings schedule for 2026]]></title>
+            <link>https://conda-forge.org/news/2025/12/22/new-meetings-schedule/</link>
+            <guid>https://conda-forge.org/news/2025/12/22/new-meetings-schedule/</guid>
+            <pubDate>Mon, 22 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Starting in 2026, the conda-forge core calls will merge with the conda community calls in a single timeslot. Instead of alternating weeks, from now on, both communities will share the same space every Wednesday. There are two rotating timeslots:]]></description>
+            <content:encoded><![CDATA[<p>Starting in 2026, the conda-forge core calls will merge with the <a href="https://conda.org/community/calendar" target="_blank" rel="noopener noreferrer" class="">conda community calls</a> in a single timeslot. Instead of alternating weeks, from now on, both communities will share the same space every Wednesday. There are two rotating timeslots:</p>
+<ul>
+<li class="">2PM UTC</li>
+<li class="">5PM UTC</li>
+</ul>
+<p>The first meeting in 2026 will take place on January 7th, at 5PM UTC. For more details consult <a class="" href="https://conda-forge.org/community/meetings/">our calendar</a>.</p>
+<p>The meeting minutes will be available in both conda.org and conda-forge.org, in the usual places.</p>
+<p>This is one of our first steps towards reducing the administrative duplication existing between these overlapping communities.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[macOS SDK directory changed]]></title>
+            <link>https://conda-forge.org/news/2025/12/18/osx-sdk-dir/</link>
+            <guid>https://conda-forge.org/news/2025/12/18/osx-sdk-dir/</guid>
+            <pubDate>Thu, 18 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Starting with conda-smithy 3.54.0, the generated build scripts for macOS]]></description>
+            <content:encoded><![CDATA[<p>Starting with conda-smithy 3.54.0, the generated build scripts for macOS
+will no longer use the system SDK directory for downloading the SDK versions
+we require, but will use a dedicated <code>/opt/conda-sdks</code> directory instead.
+Users performing local builds will need to choose a writable directory,
+and provide the path to it via the environment variable <code>OSX_SDK_DIR</code>.</p>
+<p>This change may result in some build systems, particularly CMake,
+storing paths to this temporary build directory in installed metadata.
+Feedstocks will need to substitute the stored paths with path-agnostic
+solutions (for example, see <a href="https://github.com/conda-forge/openpmd-api-feedstock/blob/15f9b3648f087d3e06331d6ec9ddff0710300593/recipe/build.sh#L100-L107" target="_blank" rel="noopener noreferrer" class="">substitutions in
+openpmd-api-feedstock</a>)
+or the correct sysroot paths (for example, see <a href="https://github.com/conda-forge/cartographer-feedstock/blob/1812f8c13bccbad20daf6ba079f7722cace93a15/recipe/conda_build_config.yaml#L19-L23" target="_blank" rel="noopener noreferrer" class="">substitutions in
+cartographer-feedstock</a>).</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[conda-forge Discourse forum is now read-only]]></title>
+            <link>https://conda-forge.org/news/2025/10/15/conda-forge-discourse-read-only/</link>
+            <guid>https://conda-forge.org/news/2025/10/15/conda-forge-discourse-read-only/</guid>
+            <pubDate>Wed, 15 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[We have made the conda-forge Discourse forum read-only. Please use the conda-forge Zulip chat instead.]]></description>
+            <content:encoded><![CDATA[<p>We have made the <a href="https://conda.discourse.group/c/pkg-building/conda-forge/25" target="_blank" rel="noopener noreferrer" class="">conda-forge Discourse forum</a> read-only. Please use the conda-forge <a href="https://conda-forge.zulipchat.com/" target="_blank" rel="noopener noreferrer" class="">Zulip chat</a> instead.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Dropping Python 3.9 support in conda-forge]]></title>
+            <link>https://conda-forge.org/news/2025/08/18/python-3-9/</link>
+            <guid>https://conda-forge.org/news/2025/08/18/python-3-9/</guid>
+            <pubDate>Mon, 18 Aug 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[With Python 3.9 reaching end-of-life in Oct 2025 and Python]]></description>
+            <content:encoded><![CDATA[<p>With Python 3.9 reaching end-of-life in Oct 2025 and Python
+3.14 being released the same month, we have decided to drop
+3.9 from our default build matrix. This will be reflected
+in your feedstock configuration on the next rerender.
+The decision to drop support 1.5 months before its EOL is
+to avoid the strain on conda-forge CI while we add support
+for 3.14.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New Accelerate support for macOS 13.3+]]></title>
+            <link>https://conda-forge.org/news/2025/07/31/new-accelerate-macos/</link>
+            <guid>https://conda-forge.org/news/2025/07/31/new-accelerate-macos/</guid>
+            <pubDate>Thu, 31 Jul 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[conda-forge by default uses OpenBLAS as its BLAS and LAPACK]]></description>
+            <content:encoded><![CDATA[<p>conda-forge by default uses <code>OpenBLAS</code> as its BLAS and LAPACK
+provider on macOS as it was updated regularly and is the least
+buggiest performant BLAS/LAPACK implementation.</p>
+<p>macOS 13.3 updated the Accelerate framework after a long time with
+improved support for LAPACK APIs and has fixes for long-time known
+bugs in the older Accelerate's BLAS and LAPACK APIs.
+conda-forge has added support for this
+new Accelerate framework by using a shim library to expose its
+functionality to most conda-forge packages including <code>numpy</code>,
+<code>scipy</code> and <code>pytorch</code>.</p>
+<p>You can use it by doing</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">conda install libblas=*=*_newaccelerate</span><br></div></code></pre></div></div>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Moving to GCC 14 and Clang 19 as default compiler versions]]></title>
+            <link>https://conda-forge.org/news/2025/07/01/moving-to-gcc-14-clang-19/</link>
+            <guid>https://conda-forge.org/news/2025/07/01/moving-to-gcc-14-clang-19/</guid>
+            <pubDate>Tue, 01 Jul 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[As part of our regular toolchain updates, we're planning to update the default]]></description>
+            <content:encoded><![CDATA[<p>As part of our regular toolchain updates, we're planning to update the default
+versions of GCC (for linux) to v14 and of Clang (for OSX) to v19, in one week.</p>
+<p>For more details, see <a href="https://github.com/conda-forge/conda-forge-pinning-feedstock/pull/7421" target="_blank" rel="noopener noreferrer" class="">https://github.com/conda-forge/conda-forge-pinning-feedstock/pull/7421</a>.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Moving to Visual Studio 2022 as default windows compiler]]></title>
+            <link>https://conda-forge.org/news/2025/06/11/moving-to-vs2022/</link>
+            <guid>https://conda-forge.org/news/2025/06/11/moving-to-vs2022/</guid>
+            <pubDate>Wed, 11 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Microsoft's Visual Studio (VS) 2019 compiler has reached its]]></description>
+            <content:encoded><![CDATA[<p>Microsoft's Visual Studio (VS) 2019 compiler has reached its
+<a href="https://learn.microsoft.com/en-us/lifecycle/products/visual-studio-2019" target="_blank" rel="noopener noreferrer" class="">end of life</a>
+over a year ago. In the meantime, several projects have moved on and
+fail to compile with VS2019.</p>
+<p>We are planning to update our default compilers on windows to the (fully compatible)
+successor VS2022 in one week from now.</p>
+<p>This will not affect you as a general user of conda-forge packages on windows;
+the only potential impact is that if you are compiling locally with VS2019 against
+artefacts produced by conda-forge, you might be required to upgrade.</p>
+<p>For more details see <a href="https://github.com/conda-forge/conda-forge.github.io/issues/2138" target="_blank" rel="noopener noreferrer" class="">https://github.com/conda-forge/conda-forge.github.io/issues/2138</a>.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Dropping CUDA 11.8 as a default CUDA version]]></title>
+            <link>https://conda-forge.org/news/2025/05/29/cuda-118/</link>
+            <guid>https://conda-forge.org/news/2025/05/29/cuda-118/</guid>
+            <pubDate>Thu, 29 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[CUDA 11.8 is the last holdover from the old days before conda-forge]]></description>
+            <content:encoded><![CDATA[<p>CUDA 11.8 is the last holdover from the old days before conda-forge
+<a href="https://github.com/conda-forge/conda-forge.github.io/issues/1963" target="_blank" rel="noopener noreferrer" class="">switched</a>
+to the new and shiny CUDA 12+ infrastructure, where the CUDA toolchain
+is provided as native conda-packages, rather than a blob in an image.</p>
+<p>For CUDA-enabled feedstocks, we've been building both 11.8 and 12.6 by default
+for a while now, but many feedstocks (notably pytorch, tensorflow, onnx, jax etc.)
+have dropped CUDA 11.8 for many months already.</p>
+<p>Due to various constraints (details below), we are dropping CUDA 11.8 as a default
+version in our global pinning on June 5th. It will still be possible to opt into
+building CUDA 11.8 on a per-feedstock basis where this is necessary or beneficial.</p>
+<p>The above-mentioned contraints are mainly:</p>
+<ul>
+<li class="">it <a href="https://github.com/conda-forge/conda-forge-pinning-feedstock/issues/6967" target="_blank" rel="noopener noreferrer" class="">complicates our pinning</a> due to needing to switch images and compilers with 11.8.</li>
+<li class="">it keeps us from <a href="https://github.com/conda-forge/conda-forge-pinning-feedstock/pull/7005" target="_blank" rel="noopener noreferrer" class="">migrating</a>
+to newer CUDA 12.x versions necessary to support new architectures.</li>
+<li class="">it's <a href="https://github.com/conda-forge/conda-forge.github.io/issues/2138#issuecomment-2916743741" target="_blank" rel="noopener noreferrer" class="">not compatible with VS2022</a>, which is due to become the default toolchain on windows
+in conda-forge soon (the previous VS2019 has reached end-of-life more than a year ago).</li>
+<li class="">it complicates our infrastructure in several places, due to the big differences between the
+before/after of the new CUDA architecture.</li>
+</ul>
+<p>After we have removed CUDA 11.8 from the pinning, any feedstock still building that version
+will drop the respective CI jobs upon rerendering. For feedstocks wanting to keep building
+CUDA 11.8 a bit longer, we have provided a custom migrator.</p>
+<p>The way to make use of this is to copy
+<a href="https://github.com/conda-forge/conda-forge-pinning-feedstock/blob/main/recipe/migrations/cuda118.yaml" target="_blank" rel="noopener noreferrer" class=""><code>cuda118.yaml</code></a>
+from the global pinning into <code>.ci_support/migrations</code> on your feedstock.
+If the <code>migrations</code> subfolder doesn't exist, please create it. Once that's committed
+(and there are no skips in the recipe for CUDA 11.8), rerendering the feedstock
+will reinstate the builds for CUDA 11.8. If you have trouble with that, please open
+a thread on <a href="https://conda-forge.zulipchat.com/" target="_blank" rel="noopener noreferrer" class="">https://conda-forge.zulipchat.com/</a>.</p>
+<p>Finally, please let us
+know in the <a href="https://github.com/conda-forge/conda-forge-pinning-feedstock/issues/7404" target="_blank" rel="noopener noreferrer" class="">issue</a>
+if your feedstock still needs to support CUDA 11.8 and why (later down the line we'll want to
+drop support also in conda-forge-ci-setup, and knowing what feedstocks - if any - still need
+CUDA 11.8 will help guide the decision on timing).</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Upcoming closure of NumPy 2.0 migration]]></title>
+            <link>https://conda-forge.org/news/2025/05/28/numpy-2-migration-closure/</link>
+            <guid>https://conda-forge.org/news/2025/05/28/numpy-2-migration-closure/</guid>
+            <pubDate>Wed, 28 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[NumPy 2.0 was a big change (the first major version in 15 years). For more than a year, we]]></description>
+            <content:encoded><![CDATA[<p>NumPy 2.0 was a big change (the first major version in 15 years). For more than a year, we
+have been migrating feedstocks from NumPy 1.x to NumPy 2.x, and while not every affected
+feedstock has been done, we are planning to conclude the migration in one week.
+Note that NumPy 2 support is required for feedstocks that intend to support Python 3.13
+and above.</p>
+<p>For feedstocks that are not compatible with v2.x yet, this means you will have to add</p>
+<div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token key atrule" style="color:#00a4db">numpy</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1.26</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic"># or 1.25</span><br></div></code></pre></div></div>
+<p>to your <code>recipe/conda_build_config.yaml</code>, and then rerender. Pins below 1.25 are not possible
+if your feedstock supports Python 3.12, as NumPy 1.25 was the first version with support for
+that Python version (and it will not be possible going forward to pin different NumPy versions
+for different Python versions).</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Governance document moved to conda-forge/governance]]></title>
+            <link>https://conda-forge.org/news/2025/05/08/governance-moved/</link>
+            <guid>https://conda-forge.org/news/2025/05/08/governance-moved/</guid>
+            <pubDate>Thu, 08 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Following a change in our governance, this document lives now in conda-forge/governance, along with the CSV files that list the core and emeritus members.]]></description>
+            <content:encoded><![CDATA[<p>Following a <a href="https://github.com/conda-forge/conda-forge.github.io/pull/2501" target="_blank" rel="noopener noreferrer" class="">change</a> in our governance, this document lives now in <a href="https://github.com/conda-forge/governance" target="_blank" rel="noopener noreferrer" class=""><code>conda-forge/governance</code></a>, along with the CSV files that list the <code>core</code> and <code>emeritus</code> members.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Updating our Ubuntu base for Miniforge Docker images (20.04 → 24.04)]]></title>
+            <link>https://conda-forge.org/news/2025/04/17/new-ubuntu-base-for-miniforge-docker-images/</link>
+            <guid>https://conda-forge.org/news/2025/04/17/new-ubuntu-base-for-miniforge-docker-images/</guid>
+            <pubDate>Thu, 17 Apr 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[The base image for our Ubuntu Dockerfiles has been upgraded from Ubuntu 20.04]]></description>
+            <content:encoded><![CDATA[<p>The base image for our Ubuntu Dockerfiles has been upgraded from Ubuntu 20.04
+(focal) to Ubuntu 24.04 (noble) in
+<a href="https://github.com/conda-forge/miniforge-images/pull/145" target="_blank" rel="noopener noreferrer" class="">PR #145</a>.
+This change ensures continued support and access to newer packages and system
+libraries.</p>
+<p>Downstream users building on top of the Ubuntu variant of our containers should
+verify compatibility with the updated environment.</p>
+<p>Thanks to @rpanai for the contribution and to the reviewers for their input.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Security Incident with Package Uploads (CVE-2025-31484)]]></title>
+            <link>https://conda-forge.org/news/2025/04/02/Security-Incident-with-Package-Uploads/</link>
+            <guid>https://conda-forge.org/news/2025/04/02/Security-Incident-with-Package-Uploads/</guid>
+            <pubDate>Wed, 02 Apr 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Yesterday, conda-forge was notified of a security incident reporting that the anaconda.org upload token]]></description>
+            <content:encoded><![CDATA[<p>Yesterday, <code>conda-forge</code> was notified of a security incident reporting that the <code>anaconda.org</code> upload token
+for the <code>conda-forge</code> channel had been accidentally leaked between on or about 2025-02-10 to 2025-04-01. Our
+investigation resulted in the temporary artifact upload shutdown you observed yesterday (2025-04-01). The results
+of our analysis show that, as best as can reasonably be determined, the token was not used by any 3rd party to
+upload malicious artifacts.</p>
+<p>More details in the <a class="" href="https://conda-forge.org/blog/2025/04/02/security-incident-with-package-uploads/">corresponding blog post</a>.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Updating our default docker images]]></title>
+            <link>https://conda-forge.org/news/2024/11/22/new-images/</link>
+            <guid>https://conda-forge.org/news/2024/11/22/new-images/</guid>
+            <pubDate>Fri, 22 Nov 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[TL;DR: We have made some updates to our Docker images and build time GLIBC selection.]]></description>
+            <content:encoded><![CDATA[<p>TL;DR: We have made some updates to our Docker images and build time GLIBC selection.</p>
+<ol>
+<li class="">We've updated our default docker images to be based on alma9</li>
+<li class="">It is now easier to override <code>c_stdlib_version</code> (especially for CUDA-enabled feedstocks), though our baseline of 2.17 hasn't changed.</li>
+<li class="">Where necessary, you can more easily switch images by setting <code>os_version: ...</code> (see below).</li>
+<li class="">We've consolidated our image names to follow a consistent pattern:</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">linux-anvil-{x86_64,aarch64,ppc64le}:{cos7,alma8,alma9}</span><br></div></code></pre></div></div>
+<p>In general, it won't be necessary in the vast majority of cases to override the
+docker-image, but if you need to do so, you can add the following to <code>conda-forge.yml</code></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">os_version:             # just to demo different values;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  linux_64: cos7        # whenever possible, please use</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  linux_aarch64: alma8  # homogeneous distro versions</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  linux_ppc64le: alma9  # across platforms</span><br></div></code></pre></div></div>
+<p>Linux builds in conda-forge run on infrastructure derived from RHEL and its clones
+-- previously CentOS, now AlmaLinux. Primarily we need this for four different
+interrelated but distinct pieces:</p>
+<ul>
+<li class="">the docker images (containing the OS which will execute our builds)</li>
+<li class="">the sysroot (mainly the C standard library, <code>glibc</code>)</li>
+<li class="">the CDTs (pieces from the distribution we cannot package ourselves)</li>
+<li class="">feedstock usage of <code>yum_requirements.txt</code></li>
+</ul>
+<p>A first key observation is that the glibc appears twice -- once explicitly in the
+sysroot we package (and compile against!), and once implicitly in the image that
+our CI runs on. This setup is essential to provide highly compatible packages by
+default (by compiling against a cos7 baseline), while avoiding constant hassles
+for feedstocks where <em>any</em> of the build/host/run dependencies requires a newer
+glibc than the baseline.</p>
+<p>This is because, for packages requiring a newer <code>c_stdlib_version</code> (and thus compiling
+against a newer sysroot through the <code>{{ stdlib("c") }}</code> infrastructure), will inherit
+a runtime-requirement of <code>__glibc &gt;=c_stdlib_version</code>, which would be unsatisfiable on
+docker-images with a too-old glibc present at runtime.</p>
+<p>We've already had this setup since 2021 (when our glibc baseline was 2.12 from cos6,
+yet we already used cos7 images), but after increasing the glibc baseline to 2.17, our
+images had lost their lead again. This is mostly related due to the third component from
+above, the CDTs (core dependency trees). These represent packages from the distribution
+itself that are hard or impossible for us to provide, yet need a systematic way to
+interact with. You can read more about <em>why we want to avoid them as much as possible</em>
+<a href="https://conda-forge.org/docs/maintainer/knowledge_base/#why-are-cdts-bad" target="_blank" rel="noopener noreferrer" class="">here</a>.</p>
+<p>Due to the end of CentOS-as-we-knew it, we already had to rewrite a lot of the logic
+there in any case to switch to Alma, which we took as an opportunity to pare down the
+set of CDTs we provide going forward. In a large majority of cases, we have regular
+conda packages for some things that only used to be available as CDTs.</p>
+<p>CDTs and packages in <code>yum_requirements.txt</code> are closely related; in many ways it can
+be considered a similar compilation-vs.-runtime split as is the case with our sysroot
+(that we compile against) vs. the glibc in the image at runtime. The split here being
+that CDTs are what we use to compile against a given distro package, and <code>yum_requirements.txt</code>
+are how we tell the infrastructure to install them into the image, if they're also
+necessary at runtime (which is not always the case).</p>
+<p>In other words, using our own packages generally allows feedstocks to avoid <em>both</em> use
+of CDTs and <code>yum_requirements.txt</code>. You can check out the CDTs we removed
+<a href="https://github.com/conda-forge/cdt-builds/issues/66#issuecomment-1833417828" target="_blank" rel="noopener noreferrer" class="">here</a>
+and how <code>yum_requirements.txt</code> translate from CentOS to Alma (resp. our own packages)
+<a href="https://github.com/conda-forge/conda-forge-pinning-feedstock/issues/6283#issuecomment-2440281086" target="_blank" rel="noopener noreferrer" class="">here</a>.</p>
+<p>The change of the image might mean that CDTs we have not repackaged for Alma do not
+match what's actually in the image anymore, or -- in rare cases -- that a package name
+under <code>yum_requirements.txt</code> needs to be updated. Please let us know if you run into
+problems there (after checking out the two links above how to transition a given package).</p>
+<p>Finally, there is one rare case where we explicitly ask feedstock authors to opt out
+of the newest images: for any feedstocks doing binary repackaging on linux (i.e. not
+compiling the package from source), please ensure that your image version (as specified
+in <code>conda-forge.yml</code>, see above) matches the <code>c_stdlib_version</code> that you are using.
+By default this is 2.17, which means you'd have to do</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">os_version:</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  linux_64: cos7</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  linux_aarch64: cos7</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  linux_ppc64le: cos7</span><br></div></code></pre></div></div>
+<p>If you require a <code>c_stdlib_version</code> of 2.28 for a given platform, then set <code>alma8</code>.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Migration to Unique Feedstock Tokens per Provider]]></title>
+            <link>https://conda-forge.org/news/2024/11/08/unique-feedstock-token-per-provider-migration/</link>
+            <guid>https://conda-forge.org/news/2024/11/08/unique-feedstock-token-per-provider-migration/</guid>
+            <pubDate>Fri, 08 Nov 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[We will be slowly migrating conda-forge to use unique feedstock tokens per provider. The feedstock token is used to allow maintainers to copy packages from our staging area to the main conda-forge channel. This change will improve our security posture and help us limit the impact of any leaked tokens. During this migration we will also be using newly implemented feedstock token expiration times to avoid race conditions between token changes and running builds.]]></description>
+            <content:encoded><![CDATA[<p>We will be slowly migrating <code>conda-forge</code> to use unique feedstock tokens per provider. The feedstock token is used to allow maintainers to copy packages from our staging area to the main <code>conda-forge</code> channel. This change will improve our security posture and help us limit the impact of any leaked tokens. During this migration we will also be using newly implemented feedstock token expiration times to avoid race conditions between token changes and running builds.</p>]]></content:encoded>
+        </item>
+    </channel>
 </rss>
