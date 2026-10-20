@@ -1719,6 +1719,120 @@ set TORCH_CUDA_ARCH_LIST=%CF_TORCH_CUDA_ARCH_LIST%
 
 </BuildScriptTabs>
 
+### Compiling for some supported CUDA architectures
+
+If your package only supports a subset of CUDA architectures, we want to express this
+constraint by depending on the `cuda-arch` metapackage. The `cuda-arch` metapackage
+expresses the **minimum** supported compute capability of a package. For example, a package
+built with `cuda-arch=6.0` is only installable when a user's least capable device has
+compute capability 6.0 (Pascal) or later. Like `cuda-version`, which wraps `__cuda`, the
+`cuda-arch` metapackage wraps `__cuda_arch`, so recipes should depend on the `cuda-arch`
+metapackage rather than on `__cuda_arch` directly.
+
+This is opt-in. Packages that use the default `CUDAARCHS` / `NVCC_GENCODE` described above
+already target all supported architectures and do not need `cuda-arch`.
+
+In your `conda_build_config.yaml` define the **minimum** supported target architecture, and
+the build arguments that you want to use for that minimum target architecture.
+
+```yaml
+# CMake reads CUDAARCHS and passes it to NVCC
+CUDAARCHS:
+  - "70-real;70-virtual"
+
+# The minimum compute capability your build supports
+cuda_arch_version:
+  - "7.0"
+```
+
+:::warning
+
+The variable holding the minimum architecture MUST be named `cuda_arch_version`.
+`conda-forge-ci-setup` looks for this name to decide what to set `CONDA_OVERRIDE_CUDA_ARCH`
+to on the build runner.
+
+Always include PTX for the highest architecture targeted by your build. The plugin reports
+only the **minimum** compute capability on the system, so a machine may also have newer
+devices that can only run your binary by JIT compiling PTX.
+
+:::
+
+In the recipe, pass the architecture flags to the build, and pin `cuda-arch` in `host` and
+in the `test` environments. The `cuda-arch` metapackage has `run_exports`, so a package with
+`cuda-arch` in `host` automatically gets the matching run requirement. The name of the
+environment variable that carries the architecture flags depends on your build system;
+`CUDAARCHS` is used here for CMake.
+
+<RecipeTabs>
+
+```recipe
+# Variant variables must be referenced in the recipe or conda-smithy strips them
+# from the build matrix
+env:
+  - CUDAARCHS={{ CUDAARCHS }}
+
+requirements:
+  build:
+    - {{ compiler('cuda') }}
+  host:
+    # Pin the minimum supported arch so that dependencies are compatible with it too
+    - cuda-arch {{ cuda_arch_version }}
+
+test:
+  requires:
+    # Otherwise cuda-arch would float up to the newest allowed version
+    - cuda-arch {{ cuda_arch_version }}
+```
+
+```recipe
+build:
+  script:
+    env:
+      # Variant variables must be referenced in the recipe or conda-smithy strips
+      # them from the build matrix
+      CUDAARCHS: ${{ CUDAARCHS }}
+
+requirements:
+  build:
+    - ${{ compiler('cuda') }}
+  host:
+    # Pin the minimum supported arch so that dependencies are compatible with it too
+    - cuda-arch ${{ cuda_arch_version }}.*
+
+tests:
+  - requirements:
+      run:
+        # Otherwise cuda-arch would float up to the newest allowed version
+        - cuda-arch ${{ cuda_arch_version }}.*
+```
+
+</RecipeTabs>
+
+For real-world examples, see the
+[cudnn-feedstock](https://github.com/conda-forge/cudnn-feedstock) (`meta.yaml`) and the
+[kokkos-feedstock](https://github.com/conda-forge/kokkos-feedstock) (`recipe.yaml`, with
+multiple variants).
+
+If your program benefits from instruction sets such as `90a` or `120f`, use them. Every
+`sm_90` device also supports `sm_90a`, and every `sm_120` device also supports `sm_120f`, so
+if the plugin reports `__cuda_arch=9.0`, at least one device on the system supports
+`sm_90a`. Sub-architectures such as `100f` cannot be expressed as `cuda-arch` versions but can
+still be targeted at build time.
+
+These instruction sets are not forward-compatible, so include non-specific PTX for the
+highest target architecture:
+
+```yaml
+TORCH_CUDA_ARCH_LIST:
+  - "8.0 9.0a 10.0a 10.0f 10.0+PTX"
+
+cuda_arch_version:
+  - "8.0"
+```
+
+Here `10.0+PTX` provides forward compatibility. `9.0+PTX` is unnecessary because any
+device it would run on also supports `9.0a` or `10.0+PTX`.
+
 ### CUDA Enhanced Compatibility
 
 Since CUDA 11, [CUDA has offered a number of stronger compatibility
